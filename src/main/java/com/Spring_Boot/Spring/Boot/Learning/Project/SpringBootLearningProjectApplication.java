@@ -9,19 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.security.PublicKey;
 
 @SpringBootApplication
-public class SpringBootLearningProjectApplication implements CommandLineRunner {
+public class SpringBootLearningProjectApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringBootLearningProjectApplication.class, args);}
-
-	private  final PaymentService obj;
-
-	public SpringBootLearningProjectApplication(PaymentService obj) {
-		this.obj = obj;
-	}
-
-	@Override
-	public void run(String... args) throws Exception {
-		obj.pay();
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootLearningProjectApplication.class, args);
+    }
 }
